@@ -6,7 +6,7 @@ let amigos = []
   const nombre = input.value.trim()
 if (!nombre) {                                     //verifica que el campo no esté vacío
     alert('Por favor ingrese un nombre')
-    return;
+    return
 }
     amigos.push(nombre)                            //añade el nombre al array "amigos"
     input.value = ""
@@ -16,7 +16,7 @@ amigos.forEach((nombre) => {
   const li = document.createElement("li")
   li.textContent = nombre
   lista.appendChild(li)
-});
+})
 }
 
 function sortearAmigo() {                           //Función para sortear amigo
